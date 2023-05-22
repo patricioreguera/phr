@@ -17,26 +17,28 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
 			</span>
 		);
 	}
-
+	{
+		/* <div className="h-36 w-fit rounded-md cursor-pointer hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-0.5 hover:animate-[wiggle_1s_ease-in-out_infinite] ">
+				<div className="flex h-full rounded-md w-full items-center justify-center bg-gray-950 back p-4"></div> */
+	}
 	return (
 		<div className="w-full">
-			<div
-				className="wow fadeInUp rounded-md bg-white p-8 shadow-one dark:bg-dark lg:px-5 xl:px-8"
-				data-wow-delay=".1s"
-			>
-				<div className="mb-5 flex items-center space-x-1">{ratingIcons}</div>
-				<p className="border-body-color text-body-color mb-8 border-b border-opacity-10 pb-8 text-base leading-relaxed dark:border-white dark:border-opacity-10 dark:text-white">
-					“{content}
-				</p>
-				<div className="flex items-center">
-					<div className="relative mr-4 h-[50px] w-full max-w-[50px] overflow-hidden rounded-full">
-						<Image src={image} alt={name} fill />
-					</div>
-					<div className="w-full">
-						<h5 className="mb-1 text-lg font-semibold text-dark dark:text-white lg:text-base xl:text-lg">
-							{name}
-						</h5>
-						<p className="text-body-color text-sm">{designation}</p>
+			<div className="flex w-fit cursor-pointer rounded-md bg-primary p-0.5">
+				<div className="rounded-md bg-white p-8 shadow-one dark:bg-darkgray ">
+					<div className="mb-5 flex items-center space-x-1">{ratingIcons}</div>
+					<p className="mb-8 border-b border-body-color border-opacity-10 pb-8 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-10 dark:text-white">
+						“{content}
+					</p>
+					<div className="flex items-center">
+						<div className="relative mr-4 h-[50px] w-full max-w-[50px] overflow-hidden rounded-full">
+							<Image src={image} alt={name} fill />
+						</div>
+						<div className="w-full">
+							<h5 className="mb-1 text-lg font-semibold text-dark dark:text-white lg:text-base xl:text-lg">
+								{name}
+							</h5>
+							<p className="text-sm text-body-color">{designation}</p>
+						</div>
 					</div>
 				</div>
 			</div>

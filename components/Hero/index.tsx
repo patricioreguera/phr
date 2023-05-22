@@ -5,7 +5,7 @@ const Hero = () => {
 		<>
 			<section
 				id="home"
-				className="relative z-10 overflow-hidden pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]"
+				className="gradient-bg relative z-10 overflow-hidden  pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
 			>
 				<div className="container">
 					<div className="-mx-1 flex flex-wrap">
@@ -14,12 +14,12 @@ const Hero = () => {
 								className="wow fadeInUp mx-auto max-w-[800px] text-center"
 								data-wow-delay=".2s"
 							>
-								<h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-									Free and Open-Source{" "}
-									<span className="gradient-text ">Next.js Template </span> for
-									Startup & SaaS
+								<h1 className="mb-5 text-2xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-7xl md:leading-tight">
+									Maximize your
+									<br />
+									<span className="gradient-text ">Online potential</span>
 								</h1>
-								<p className="text-body-color mb-12 text-base font-medium !leading-relaxed dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
+								<p className="mb-12 text-base font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
 									Startup is free Next.js template for startups and SaaS
 									business websites comes with all the essential pages,
 									components, and sections you need to launch a complete
@@ -40,7 +40,8 @@ const Hero = () => {
 						</div>
 					</div>
 				</div>
-				<div className="absolute top-0 right-0 z-[-1] opacity-30 lg:opacity-100">
+
+				{/* 	<div className="absolute right-0 top-0 z-[-1] ">
 					<svg
 						width="450"
 						height="556"
@@ -280,7 +281,7 @@ const Hero = () => {
 							</radialGradient>
 						</defs>
 					</svg>
-				</div>
+				</div> */}
 			</section>
 		</>
 	);
