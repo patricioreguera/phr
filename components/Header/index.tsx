@@ -54,10 +54,10 @@ const Header = () => {
 								} `}
 							>
 								<Image
-									src="/images/logo/logo.png"
+									src="/images/logo/logo-full.svg"
 									alt="logo"
-									width={40}
-									height={10}
+									width={130}
+									height={100}
 									className="hidden  dark:block"
 								/>
 							</Link>
@@ -114,7 +114,7 @@ const Header = () => {
 								<Link href="/signup" className="btn-primary">
 									Get started &rarr;
 								</Link>
-								{/* 	<div>
+								{/* <div>
 									<ThemeToggler />
 								</div> */}
 							</div>
